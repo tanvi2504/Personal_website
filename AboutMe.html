@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>About me</title>
+<link href = "home.css" rel="stylesheet" type="text/css"/>
+<script src="fancy.js">
+</script>
+</head>
+
+<body>
+<div id = "wrapper">
+<header></header>
+
+<!-- Navigation bar-->
+<ul class = "first">
+	<li><a  href="Index.html">HOME</a></li>
+   <li> <a class = "active" href="AboutMe.html">ABOUT ME</a></li>
+   <li> <a href="Projects.html">PROJECTS</a></li>
+   <li> <a  href="Achievements.html">SKILLS & ACHIEVEMENTS</a></li>
+  <li>  <a href="Contact.html">CONTACT</a></li>
+</ul>
+<div id ="content" >
+<div class="pic" >
+  <img class="img-circle" src="images/pic.jpg" alt ="Tanvi Raut" width="250" height="250" >
+  <p id= "text1">
+			   TANVI RAUT<br>
+               </p>
+         <p id= "text2">
+               Masters in Computer Science
+		</p>
+	
+</div>
+<div class="exp">
+  <button class="accordion"><b>EDUCATION</b></button>
+  <div class="panel">
+    <p class ="p1" > <br>
+    <h2 style="font-size:120%; color:#3B3B3B; line-height:0.4">Graduation : </h2>
+    <br>
+    <h3 style="font-size:120%;  line-height:0.4"> Rochester Institute of Techonolgy</h3>
+    <br>
+    <p style="font-size:105%;"> Masters Degree: Computer Science</p>
+    <p style="font-size:105%;"> GPA: 3.44   &nbsp; CGPA: 3.66</p>
+    <p style="font-size:105%;"> Current: August 2015 - May 2017(expected) </p>
+    <br>
+    <br>
+    <h2 style="font-size:120%; color:#3B3B3B; line-height:0.4 ">Under-Graduation:</h2>
+    <br>
+    <h3 style="font-size:120%; line-height:0.4"> Rajiv Gandhi Institute of Techonolgy</h3>
+    <br>
+    <p style="font-size:105%;"> Bachelors Degree: Computer Engineering</p>
+    <p style="font-size:105%;"> Attended: August 2010 - May 2014 </p>
+    <br>
+    </p>
+  </div>
+  <button class="accordion"><b>COURSES</b></button>
+  <div class="panel"> <br>
+    <h2 style="font-size:120%; color:#3B3B3B; line-height:0.4"> Courses Completed  : </h2>
+    <br>
+    <ul class="second">
+      <li style="font-size:115%; margin-left:10px">Advanced Object Oriented Programming Concepts</li>
+      <li style="font-size:115%; margin-left:10px">Computational Problem Solving (Data Structures)</li>
+      <li style="font-size:115%; margin-left:10px">Foundations of Computer Science Theory</li>
+      <li style="font-size:115%; margin-left:10px">Introduction to Algorithms</li>
+      <li style="font-size:115%; margin-left:10px">Foundations of Computer Graphics</li>
+      <li style="font-size:115%; margin-left:10px">Introduction to Big Data<br>
+      </li>
+    </ul>
+    <ul class = "second">
+      <h2 style="font-size:120%; color:#3B3B3B; line-height:0.4; margin-top:20px"> Courses Undertaken : </h2>
+      <br>
+      <li style="font-size:115%; margin-left:10px">Foundations of Computer Vision</li>
+      <li style="font-size:115%; margin-left:10px">Foundations of Intelligent Systems</li>
+      <li style="font-size:115%; margin-left:10px">Applications in Virtual Reality</li>
+      
+    </ul>
+  </div>
+  <button class="accordion"><b>EXPERIENCE</b></button>
+  <div id="foo" class="panel"> <br>
+    <h2 style="font-size:120%; color:#111111; line-height:0.4"> Research Assistant at School of Film and Animation at R.I.T </h2>
+    <br>
+    <p style="font-size:108%; line-height:1.5"> I currently work here </p>
+    <p style="font-size:105%;"> <b >Start date:</b> May 2016 </p>
+    <br>
+    <p style="font-size:109%; line-height:1.5"><b> Description : </b></p>
+    <p style="font-size:108%; line-height:1.5">Modified an existing system to play video sequences by loading frames into the GPU at a specified frames-per-second to study the vocabulary used to describe live action sequences and 3D animations when played at a different frames-per-second. Designed UI  using C#<br>
+      <b>Technology used:</b> C/C++ , OpenGL, C#.</p>
+    <br>
+    <br>
+    <br>
+    <h2 style="font-size:120%; color:#111111; line-height:0.4"> Teaching Assistant/Grader for Foundations of Computer Graphics </h2>
+    <br>
+    <p style="font-size:108%; line-height:1.5"> I currently work here </p>
+    <p style="font-size:105%;"> <b >Start date:</b> June 2016 </p>
+    <br>
+    <p style="font-size:109%; line-height:1.5"><b> Description : </b></p>
+    <p style="font-size:108%; line-height:1.5">1. Presented a video lecture on Math review(Points, Vectors and Matrices) and Setting up the environment for coding in JAVA/C++/C/Python along with OpenGL.<br>
+      2. Grading the Programming assignments and homework(summaries of SIGGRAPH video and ACM papers)<br>
+      3. Helping students to solve their doubts<br>
+      4. Prepared stubs for the programming lab assignments<br>
+      <b>Technology used:</b> Java/C/C++/Python , OpenGL, WebGL</p>
+      <br>
+      <br>
+  </div>
+</div>
+</div>
+
+
+
+<footer></footer>
+
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+</body>
+</html>
